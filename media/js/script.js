@@ -189,11 +189,11 @@ for(var i=0; i < projectsToggle.length; i++) {
     this.classList.add("selected");
     projectSelect=this;
     if(this.getAttribute("id") == "web-apps") {
-      skip = [7, 8, 9, 10, 11, 12];
+      skip = [6,7];
       currentSlide(1);
     } else if(this.getAttribute("id") == "electronics") {
-      skip = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-      currentSlide(12);
+      skip = [0, 1, 2, 3, 4, 5];
+      currentSlide(7);
     } else {
       skip = [];
       currentSlide(1);
@@ -201,24 +201,6 @@ for(var i=0; i < projectsToggle.length; i++) {
     executeHide();  
   });
 }
-
-// var slideActive=slide[0];
-
-  //   for(var i=0;i<=12;i++)
-  //   {
-  //     document.querySelector(".prev").addEventListener("click", function() {
-  //     // plusSlides(-1);
-  //     this.classList.remove("animate__backInRight");
-  //     this.classList.add("animate__backInLeft");
-  //     // slideActive=this;
-  // });
-  // document.querySelector(".next").addEventListener("click", function() {
-  //     // plusSlides(1);
-  //     this.classList.remove("animate__backInLeft");
-  //     this.classList.add("animate__backInRight");
-
-  // });
-  //   }
 
 
 var numberText = document.querySelectorAll(".numbertext");
@@ -343,88 +325,27 @@ var slide=document.querySelectorAll(".slide");
     slide[7].classList.add("animate__backInRight");
   });
 
-  document.querySelector(".prev").addEventListener("click", function() {
-    // plusSlides(-1);
-    slide[8].classList.remove("animate__backInRight");
-    slide[8].classList.add("animate__backInLeft");
-  });
-
-  document.querySelector(".next").addEventListener("click", function() {
-    // plusSlides(1);
-    slide[8].classList.remove("animate__backInLeft");
-    slide[8].classList.add("animate__backInRight");
-  });
-
-  document.querySelector(".prev").addEventListener("click", function() {
-    // plusSlides(-1);
-    slide[9].classList.remove("animate__backInRight");
-    slide[9].classList.add("animate__backInLeft");
-  });
-
-  document.querySelector(".next").addEventListener("click", function() {
-    // plusSlides(1);
-    slide[9].classList.remove("animate__backInLeft");
-    slide[9].classList.add("animate__backInRight");
-  });
-
-  document.querySelector(".prev").addEventListener("click", function() {
-    // plusSlides(-1);
-    slide[10].classList.remove("animate__backInRight");
-    slide[10].classList.add("animate__backInLeft");
-  });
-
-  document.querySelector(".next").addEventListener("click", function() {
-    // plusSlides(1);
-    slide[10].classList.remove("animate__backInLeft");
-    slide[10].classList.add("animate__backInRight");
-  });
-
-  document.querySelector(".prev").addEventListener("click", function() {
-    // plusSlides(-1);
-    slide[11].classList.remove("animate__backInRight");
-    slide[11].classList.add("animate__backInLeft");
-  });
-
-  document.querySelector(".next").addEventListener("click", function() {
-    // plusSlides(1);
-    slide[11].classList.remove("animate__backInLeft");
-    slide[11].classList.add("animate__backInRight");
-  });
-
-  document.querySelector(".prev").addEventListener("click", function() {
-    // plusSlides(-1);
-    slide[12].classList.remove("animate__backInRight");
-    slide[12].classList.add("animate__backInLeft");
-  });
-
-  document.querySelector(".next").addEventListener("click", function() {
-    // plusSlides(1);
-    slide[12].classList.remove("animate__backInLeft");
-    slide[12].classList.add("animate__backInRight");
-  });
-
 
 var slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
-  if(projectSelect != projectsToggle[0]) {
+function plusSlides(n) 
+{
+  if(projectSelect != projectsToggle[0]) 
+  {
     if (n+slideIndex > slides.length) {slideIndex = 0} 
-    if(slideIndex + n >= 1 && slideIndex + n <= 7) {
-      skip = [7, 8, 9, 10, 11, 12];
+
+    if(slideIndex + n >= 1 && slideIndex + n <= 6) {
+      skip = [6,7];
       projectSelect.classList.remove("selected");
       projectsToggle[1].classList.add("selected");
       projectSelect=projectsToggle[1];
-    } else if(slideIndex + n >= 8 && slideIndex + n <= 11) {
-      skip = [0, 1, 2, 3, 4, 5, 6, 11, 12];
+    }  
+    else {
+      skip = [0, 1, 2, 3, 4, 5];
       projectSelect.classList.remove("selected");
       projectsToggle[2].classList.add("selected");
       projectSelect=projectsToggle[2];
-    } else {
-      skip = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-      projectSelect.classList.remove("selected");
-      projectsToggle[3].classList.add("selected");
-      projectSelect=projectsToggle[3];
     }
     executeHide();
   }
@@ -432,7 +353,8 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
+function currentSlide(n) 
+{
   showSlides(slideIndex = n);
 }
 
@@ -465,10 +387,58 @@ function changeimg() {
   }
 }
 
+setInterval(changeimg2, 5000);
 
-// const prevBtn=document.querySelector(".prev");
-// const nextBtn=document.qualSelector(".next");
+var currImg2=1;
+function changeimg2() {
+  if(currImg2 == 1) {
+    document.querySelector(".automation-img").setAttribute("src", "./media/img/home4.jpeg");
+    currImg2=2;
+  } else {
+    document.querySelector(".automation-img").setAttribute("src", "./media/img/home2.jpeg");
+    currImg2=1;
+  }
+}
 
-// prevBtn.document.addEventListener("click", function() {
 
-// })
+
+
+/////////// FORM //////////////////////
+
+const form = document.getElementById("contact-form");
+
+async function handleSubmit(event) {
+	event.preventDefault();
+	var message = document.getElementById("text-message");
+	var data = new FormData(event.target);
+	fetch(event.target.action, {
+	    method: form.method,
+	    body: data,
+	    headers: {
+	      Accept: "application/json",
+	    },
+    })
+
+    .then((response) => {
+	    message.innerHTML = "Your message has been sent.";
+	    document.querySelector(".msg_style").style.display = "block";
+	    document.querySelector(".msg_style").style.color = "green";
+
+	    setTimeout(function () {
+	      document.querySelector(".msg_style").style.display = "none";
+	    }, 4000);
+	    form.reset();
+    })
+    .catch((error) => {
+        message.innerHTML =
+          "Oops! There was a problem delivering your message, please contact via other means.";
+        document.querySelector(".msg_style").style.display = "block";
+        document.querySelector(".msg_style").style.color = "red";
+
+        setTimeout(function () {
+          document.querySelector(".msg_style").style.display = "none";
+        }, 4000);
+    });
+}
+
+form.addEventListener("submit", handleSubmit);
