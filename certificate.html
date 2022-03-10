@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,intial-scale=1.0,user-scalable=no" name="viewport" />
+	<title>My Certificates</title>
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel = "icon" href ="images/title_logo4.png" type = "image/x-icon">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<link rel="stylesheet" type="text/css" href="media/css/style.css">
+</head>
+<body>
+    <!---------------------- Header Open --------------------->
+	<header class="head" id="header">
+		<div class="left-head">
+			<a href="#home" class="name">
+				<span class="first-name">Kushagra</span>
+				<span class="last-name">Jain</span>
+			</a>
+		</div>
+		<div class="right-head">
+			<ul class="menu">
+				<li><a href="./index.html#home" class="home head-option">Home</a></li>
+				<li><a href="./index.html#about" class="about head-option">About</a></li>
+				<li><a href="./index.html#skills" class="skills head-option">Skills</a></li>
+				<li><a href="./index.html#qualifications" class="qualifications head-option">Qualifications</a></li>
+				<li><a href="./index.html#projects" class="projects head-option">Projects</a></li>
+				<li><a href="./certificates.html" class="certificates head-option selected">Certificates</a></li>
+				<li><a href="./index.html#contact" class="contact head-option">Contact Me</a></li>
+				<span class="material-icons-outlined dark_mode">dark_mode</span>
+				<span class="material-icons-outlined light_mode hide">light_mode</span>
+			</ul>
+		</div>
+	</header>
+	<!---------------------- Header Close --------------------->
+
+    <div id="certificates" class="section">
+		<div class="certificate-heading section-heading">
+			<h2>Certificates</h2>
+			<span>All of my major certificates, I have earned till now!</span>
+		</div>
+
+        <div class="certificates-main">
+            <div class="certificate-card">
+                <div class="c-heading">
+                    <h3>Let's Grow More - Certificate of Appreciation</h3>
+                    <span>August 2021</span>
+                </div>
+    
+                <div class="c-list">
+                    <ul>
+                        <li>One of the <strong>Top contributors</strong></li>
+                        <li>Contributed some beginner friendly projects of web development in <strong>HTML,CSS and JavaScript.</strong></li>
+                        <li>Contributed some <strong>C++ programs in Data Structures and Algorithms</strong> repository.</li>
+                    </ul>
+                </div>
+    
+                <div class="c-btn">
+                    <button id="myImg" class="button button-flex btn-img"  onclick="image(0)">
+                        View Certificate
+                        <span class="iconify" data-icon="akar-icons:cloud-download"></span>
+                    </button>
+                    <!-- <img id="" src="media/img/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
+                    <div id="myModal" class="modal">
+                        <span class="close" onclick="spanning(0)">&times;</span>
+                        <!-- <img class="modal-content" id="img01"> -->
+                        <img class="modal-content" src="./media/img/LetsGrowMore.jpg">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="certificate-card">
+                <div class="c-heading">
+                    <h3>Participant at LiveTheCode Hackathon</h3>
+                    <span>October 2021</span>
+                </div>
+    
+                <div class="c-list">
+                    <ul>
+                        <li>I with my team participated in nation-wide hackathon where we created a website to educated common people about rocket science and gave information of all types of rockets of different organizations.</li>
+                        <li>It was our First Hackathon We came <strong><em>16 at National level.</em></strong></li>
+                    </ul>
+                </div>
+    
+                <div class="c-btn">
+                    <button id="myImg1" class="button button-flex btn-img" onclick="image(1)">
+                        View Certificate
+                        <span class="iconify" data-icon="akar-icons:cloud-download"></span>
+                    </button>
+                    <!-- <img id="" src="media/img/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
+                    <div id="myModal1" class="modal">
+                        <span class="close" onclick="spanning(1)">&times;</span>
+                        <!-- <img class="modal-content" id="img01"> -->
+                        <img class="modal-content" src="./media/img/Live-the-code.png">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="certificate-card">
+    
+                <div class="c-content">
+                    <div class="c-heading">
+                        <h3>30 Days of Google Cloud</h3>
+                        <span>October 2021</span>
+                    </div>
+    
+                    <div class="c-list">
+                        <ul>
+                            <li>Throughout this program I learnt about <strong><em>Cloud Resources, Cloud Environments, Kubernetes, Clusters, Virtual Machines</strong></em> and many more things as part of it.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-btn">
+                    <button id="myImg1" class="button button-flex btn-img" onclick="image(2)">
+                        View Certificate
+                        <span class="iconify" data-icon="akar-icons:cloud-download"></span>
+                    </button>
+                    <!-- <img id="" src="media/img/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
+                    <div id="myModal1" class="modal">
+                        <span class="close" onclick="spanning(2)">&times;</span>
+                        <!-- <img class="modal-content" id="img01"> -->
+                        <img class="modal-content" src="./media/img/google-cloud.jpeg">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="certificate-card">
+                <div class="c-heading">
+                    <h3>Android Development - Certificate of Training</h3>
+                    <span>September 2020</span>
+                </div>
+    
+                <div class="c-list">
+                    <ul>
+                        <li>This Traiining was provided by Internshala Trainings</li>
+                        <li>I learned about <strong>Kotlin, Android Architecture, Lifecycles, Activites, etc.</strong> and also made <strong>5 Android Projects</strong> throughout the program</li>
+                        <li>I Scored a <strong>100% score</strong> in the final test.</li>
+                    </ul>
+                </div>
+    
+                <div class="c-btn">
+                    <button id="myImg1" class="button button-flex btn-img" onclick="image(3)">
+                        View Certificate
+                        <span class="iconify" data-icon="akar-icons:cloud-download"></span>
+                    </button>
+                    <!-- <img id="" src="media/img/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
+                    <div id="myModal1" class="modal">
+                        <span class="close" onclick="spanning(3)">&times;</span>
+                        <!-- <img class="modal-content" id="img01"> -->
+                        <img class="modal-content" src="./media/img/android.jpg">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="certificate-card">
+                <div class="c-heading">
+                    <h3>3rd Prize and Best Innovation Award - TechnoXian World Robotics Championship</h3>
+                    <span>October 2019</span>
+                </div>
+    
+                <div class="c-list">
+                    <ul>
+                        <li>Archived a Nationwide <strong>3rd position</strong> and won <strong>Best Innovation Award</strong> in TechnoXian- World Robotics Championship.</li>
+                        <li>I was awarded a Medal and a Trophy for the same.</li>
+                    </ul>
+                </div>
+    
+                <div class="c-btn">
+                    <button id="myImg1" class="button button-flex btn-img" onclick="image(4)">
+                        View Certificate
+                        <span class="iconify" data-icon="akar-icons:cloud-download"></span>
+                    </button>
+                    <!-- <img id="" src="media/img/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
+                    <div id="myModal1" class="modal">
+                        <span class="close" onclick="spanning(4)">&times;</span>
+                        <!-- <img class="modal-content" id="img01"> -->
+                        <img class="modal-content" src="./media/img/tecknoxian.jpg">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="certificate-card">
+                <div class="c-heading">
+                    <h3>First Prize - Geek-a-Hertz</h3>
+                    <span>November 2018</span>
+                </div>
+    
+                <div class="c-list">
+                    <ul>
+                        <li>I was awarded <strong>1st prize</strong> in inter school science competition by making an innovative prototype named<strong> No Human Vehicle Tolling System.</strong></li>
+                        <li> It was made to prevent road accidents and automate the challan system.</li>
+                    </ul>
+                </div>
+    
+                <div class="c-btn">
+                    <button id="myImg1" class="button button-flex btn-img" onclick="image(5)">
+                        View Certificate
+                        <span class="iconify" data-icon="akar-icons:cloud-download"></span>
+                    </button>
+                    <!-- <img id="" src="media/img/img_snow.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
+                    <div id="myModal1" class="modal">
+                        <span class="close" onclick="spanning(5)">&times;</span>
+                        <!-- <img class="modal-content" id="img01"> -->
+                        <img class="modal-content" src="./media/img/geek-a-heartz.jpg">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+	</div>
+
+   
+    <footer id="footer">
+		<div class="foot-content">
+			<div class="foot-name">
+				<h2>Kushagra Jain</h2>
+				<span>Frontend Web Developer</span>
+			</div>	
+			<div class="foot-social">
+				<a href="https://leetcode.com/ishaanjain112/" target="_blank">
+					<span class="iconify" data-icon="cib:leetcode"></span>
+				</a>
+
+				<a href="https://www.codechef.com/users/kushagra_58" target="_blank">
+					<span class="iconify" data-icon="simple-icons:codechef"></span>
+				</a>
+
+				<a href="https://github.com/KushagraJain58-cmd" target="_blank">
+					<span class="iconify" data-icon="uil:github-alt"></span>
+				</a>
+			</div>
+		</div>
+		<div>
+			Copyright © 2022 Kushagra Jain
+		</div>
+	</footer>
+
+    <script src="media/js/script.js"></script>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.querySelectorAll(".modal");
+       
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        // var img = document.querySelectorAll(".btn-img");
+        // When the user clicks on <span> (x), close the modal
+        // var span = document.querySelectorAll(".close");
+
+        // for(var i=0;i<6;i++)
+        // {
+        //     img[i].onclick = function(i){
+        //   modal[i].style.display = "block";
+        // }
+        // }
+        // for(var j=0j<6;j++)
+        // {
+        //     span[j].onclick = function(j) { 
+        //   modal[j].style.display = "none";
+        // }
+        // }
+        
+
+        function image(i)
+        {
+            modal[i].style.display = "block";
+        }
+        function spanning(j)
+        {
+            modal[j].style.display = "none";
+        }
+
+        // img[0].onclick = function(){
+        //   modal[0].style.display = "block";
+        // }
+        // span[0].onclick = function() { 
+        //   modal[0].style.display = "none";
+        // }
+
+        // img[1].onclick = function(){
+        //   modal[1].style.display = "block";
+        // }
+        // span[1].onclick = function() { 
+        //   modal[1].style.display = "none";
+        // }
+
+        // img[2].onclick = function(){
+        //   modal[2].style.display = "block";
+        // }
+        // span[2].onclick = function() { 
+        //   modal[2].style.display = "none";
+        // }
+
+        // img[3].onclick = function(){
+        //   modal[3].style.display = "block";
+        // }
+        // span[3].onclick = function() { 
+        //   modal[3].style.display = "none";
+        // }
+
+        // img[4].onclick = function(){
+        //   modal[4].style.display = "block";
+        // }
+        // span[4].onclick = function() { 
+        //   modal[4].style.display = "none";
+        // }
+
+        // img[5].onclick = function img(){
+        //   modal[5].style.display = "block";
+        // }
+        // span[5].onclick = function() { 
+        //   modal[5].style.display = "none";
+        // }
+        
+        </script>
+</body>
