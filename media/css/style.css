@@ -238,6 +238,7 @@ button
 	opacity: 0.8;
 	margin-right: 20px;
 	margin-top: 10px;
+	height: fit-content;
   }
   .topnav #myLinks a
   {
@@ -266,6 +267,7 @@ button
 	  flex-direction: column;
 	  justify-content: flex-end;
 	  align-items: flex-end;
+	  
   }
 
   .hamburger span
@@ -439,7 +441,7 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 {
 	height: auto;
 	padding: 0px 30px 30px 30px;
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 }
 .home-content
 {

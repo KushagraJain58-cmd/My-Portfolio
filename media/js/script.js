@@ -34,16 +34,16 @@ lightBtn[1].addEventListener("click", function () {
 
 /////////////////////////Changing Color of the section  ////////////////////////////////
 
-const homeBtn = document.querySelector(".home");
-const aboutBtn = document.querySelector(".about");
-const skillsBtn = document.querySelector(".skills");
-const qualificationsBtn = document.querySelector(".qualifications");
-const certificatesBtn = document.querySelector(".certificates");
-const projectsBtn = document.querySelector(".projects");
-const contactMeBtn = document.querySelector(".contact");
+const homeBtn = document.querySelectorAll(".home");
+const aboutBtn = document.querySelectorAll(".about");
+const skillsBtn = document.querySelectorAll(".skills");
+const qualificationsBtn = document.querySelectorAll(".qualifications");
+const certificatesBtn = document.querySelectorAll(".certificates");
+const projectsBtn = document.querySelectorAll(".projects");
+const contactMeBtn = document.querySelectorAll(".contact");
 const headOption = document.querySelectorAll(".head_optn");
 
-var currSelected = homeBtn;
+var currSelected = homeBtn[1];
 
 for(var i=0; i < headOption.length; i++) {
   headOption[i].addEventListener("click", function() {
@@ -52,6 +52,19 @@ for(var i=0; i < headOption.length; i++) {
     currSelected = this;
   });
 }
+
+//for hamburger
+
+var currSelected2 = homeBtn[0];
+var headOption2 = document.querySelectorAll(".head-option");
+for(var i=0; i < headOption2.length; i++) {
+  headOption2[i].addEventListener("click", function() {
+    currSelected2.classList.remove("selected");
+    this.classList.add("selected");
+    currSelected2 = this;
+  });
+}
+
 
 //////// for scroll ///////
 
