@@ -1,6 +1,6 @@
 
 @media (max-width: 1221px) {
-    :root {
+    /* :root {
       --h1FontSize: 2rem;
       --h2FontSize: 1.5rem;
       --h3FontSize: 1.2rem;
@@ -8,12 +8,16 @@
       --normalSize: 0.85rem;
       --smallSize: 0.75rem;
       --icon-size: 1.2rem;
-    }
+    } */
 
     .right-head li
     {
       margin-right: 30px;
     }
+    .sub-head h4
+      {
+        font-size: 1.5rem;
+      }
   }
 
   @media (max-width: 1090px)
@@ -38,7 +42,7 @@
   }
 
   @media (max-width: 1024px) {
-    :root {
+    /* :root {
       --h1FontSize: 1.7rem;
       --h2FontSize: 1.3rem;
       --h3FontSize: 1rem;
@@ -46,11 +50,19 @@
       --normalSize: 0.75rem;
       --smallSize: 0.7rem;
       --icon-size: 1.1rem;
-    }
+    } */
 
     .social-home
     {
       margin-left: 3rem;
+    }
+    .fixed-social-show
+    {
+      right: 1.5rem;
+    }
+    .back-to-top
+    {
+      right: 1rem;
     }
 
   }
@@ -92,6 +104,16 @@
         height: 18rem;
         width: 18rem;
       }
+      .skills-main
+      {
+        grid-column-gap: 2rem;
+	      grid-row-gap: 2rem; 
+      }
+      .sub-head
+      {
+        margin-right: 10px;
+      }
+      
   }
 
   @media(max-width: 817px)
@@ -110,14 +132,14 @@
       height: 20rem;
       width: 20rem;
     }
-    .fixed-social-show
+    /* .fixed-social-show
     {
       right: 2.5rem;
     }
     .back-to-top
     {
       right: 2rem;
-    }
+    } */
   }
 
   @media(max-width: 800px)
@@ -149,6 +171,23 @@
     {
       display: none;
     }
+    .timeline-items::before {
+      left: 7px;
+    }
+  
+    .timeline-card:nth-child(odd) {
+      padding-right: 0;
+      text-align: left;
+    }
+  
+    .timeline-card:nth-child(odd),
+    .timeline-card:nth-child(even) {
+      padding-left: 37px;
+    }
+  
+    .card-dot {
+      left: 0;
+    }
   
   }
 
@@ -157,6 +196,10 @@
     .written
     {
       padding: 0px;
+    }
+    .skills-main
+    {
+      grid-template-columns: repeat(1, auto);
     }
   }
   @media(max-width: 780px)
@@ -191,6 +234,11 @@
       height: 15rem;
       width: 15rem;
     }
+    .qualifications-menu, .projects-menu {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+      }
   }
 
   @media(max-width: 540px)
@@ -230,7 +278,7 @@
     .social-home .iconify
     {
       height: 2rem;
-	  width: 2rem;
+	    width: 2rem;
     }
     .about-content
     {
@@ -252,6 +300,24 @@
 
   }
 
+  @media(max-width:470px) {
+    .qualifications-menu .iconify, .projects-menu .iconify {
+      height: 1.1rem;
+      width: 1.1rem;
+    }
+    .menu-heading h4
+    {
+      font-size: 1.25rem;
+    }
+    .qualifications-menu, .projects-menu {
+      width: 50%;
+    }
+    .timeline-whole
+{
+	width: 85%;
+	padding: 50px 15px;
+}
+
   @media(max-width:430px)
   {
     .homeBlob
@@ -270,8 +336,30 @@
     }
     .about-para
     {
-      font-size: 1rem;
+      font-size: 1.25rem;
     }
+    .specs-heading h4
+    {
+      font-size: 1rem;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+    }
+    .specs-heading .iconify
+    {
+      height: 1.5rem;
+      width: 1.5rem;
+      color: var(--secondaryText);
+    }
+    .progress-bar, .progress-bar div
+    {
+      height: 4px;
+    }
+    #education, #achievements, #work
+    {
+      justify-content:flex-start;
+    align-items:flex-start;
+    }
+
   }
   @media(max-width: 400px)
   {
@@ -284,14 +372,14 @@
       {
         height: 1.5rem;
         width: 1.5rem;
-        margin:4px 5px 0px 20px;
+        margin:16px 40px 0px 20px;
       }
       .icon-head a.icon
       {
         margin:8px 15px 0px 0px;
       }
       .topnav .hamburger a {
-        padding: 12px 16px;
+        /* padding: 12px 16px; */
         font-size: 15px;
         display: block;
         }
@@ -299,6 +387,19 @@
       {
         font-size: 20px;
         margin:25px 5px 0px 0px;
+      }
+      .skills-main
+      {
+        margin-right: 20px;
+      }
+      
+      .qualifications-menu .iconify, .projects-menu .iconify {
+        height: 1rem;
+        width: 1rem;
+      }
+      .menu-heading h4
+      {
+        font-size: 1rem;
       }
   }
 
@@ -326,7 +427,23 @@
     {
       max-width: 95%;
     }
-
+    .sub-head
+    {
+      margin-right: 0px;
+    }
+    .sub-head h4
+    {
+      font-size: 1rem;
+    }
+    .sub-head span
+    {
+      font-size: 0.75rem;
+    }
+    .card-head .iconify
+    {
+	    margin: 0px 20px 0px 5px;
+	    color: var(--btns);
+    }
   }
 
   @media(max-width: 335px)
@@ -345,6 +462,14 @@
       max-width: 95%;
       font-size: 0.8rem;
     }
+    /* .timeline-items::before {
+      left: 5px;
+    } */
+    .timeline-items
+    {
+      margin-right: 10px;
+    }
+  
   }
   @media(max-width: 307px)
   {
@@ -356,6 +481,19 @@
       .about-content
       {
         margin-right: 50px;
+      }
+  }
+
+  @media(max-width:300px)
+  {
+    .icon-head a i .iconify
+      {
+        margin:16px 30px 0px 20px;
+      }
+      .sml-head a
+      {
+        font-size: 17px;
+        margin-top:5px ;
       }
   }
 

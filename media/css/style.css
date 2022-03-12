@@ -244,7 +244,18 @@ button
   {
 	  font-size: 20px;
   }
-  
+  .topnav #myLinksCertificate {
+	display: none;
+	background-color: #000;
+	opacity: 0.8;
+	margin-right: 20px;
+	margin-top: 10px;
+	height: fit-content;
+  }
+  .topnav #myLinksCertificate a
+  {
+	  font-size: 20px;
+  }
   .sml-head a {
 	padding: 18px 16px;
 	text-decoration: none;
@@ -255,7 +266,7 @@ button
   }
   .topnav .hamburger a {
 	color: white;
-	padding: 14px 16px;
+	/* padding: 14px 16px; */
 	text-decoration: none;
 	font-size: 17px;
 	display: block;
@@ -292,7 +303,7 @@ button
 	right: 0;
 	top: 0;
 	font-size: 30px;
-	margin:8px 45px 0px 0px;
+	margin:20px 65px 0px 0px;
   }
   .icon-head a i .iconify
   {
@@ -522,6 +533,7 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 	justify-content: center;
 	margin-bottom: 6rem;
 	color: var(--primaryText);
+	text-align: center;
 }
 
 .section-heading h2
@@ -584,7 +596,7 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 
 #skills
 {
-	max-width: 75%;
+	width: 85%;
 	color: var(--primaryText);
 }
 
@@ -592,6 +604,7 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
+	/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
 	grid-template-rows: repeat(1, 1fr);
 	grid-column-gap: 4rem;
 	grid-row-gap: 4rem; 
@@ -602,7 +615,7 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	/* justify-content: space-around; */
 	cursor: pointer;
 }
 .sub-head

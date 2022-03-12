@@ -489,3 +489,16 @@ function myFunction()
       x.classList.add("animate__slideInDown");
     }
 }
+
+function myFunctionCertificate()
+{
+  var y=document.getElementById("myLinksCertificate")
+  if (y.style.display === "block")
+    {
+      y.style.display = "none";
+    } 
+    else 
+    {
+      y.style.display = "block";
+    }
+}
