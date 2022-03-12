@@ -1,0 +1,144 @@
+
+@media (max-width: 1221px) {
+    :root {
+      --h1FontSize: 2rem;
+      --h2FontSize: 1.5rem;
+      --h3FontSize: 1.2rem;
+      --h4FontSize: 1rem;
+      --normalSize: 0.85rem;
+      --smallSize: 0.75rem;
+      --icon-size: 1.2rem;
+    }
+
+    .right-head li
+    {
+      margin-right: 30px;
+    }
+  }
+
+  @media (max-width: 1075px)
+  {
+    .name
+    {
+      font-size: 25px;
+      margin-left: 20px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    :root {
+      --h1FontSize: 1.7rem;
+      --h2FontSize: 1.3rem;
+      --h3FontSize: 1rem;
+      --h4FontSize: 0.8rem;
+      --normalSize: 0.75rem;
+      --smallSize: 0.7rem;
+      --icon-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 988px)
+  {
+    .home, .about, .skills, .qualifications, .certificates, .projects, .contact
+      {
+        font-size: 14px;
+      }
+      .name
+      {
+        margin-top: 0;
+      }
+      .right-head .material-icons-outlined {
+        font-size: 1.2rem;
+      }
+  }
+
+  @media (max-width: 900px)
+  {
+    .home, .about, .skills, .qualifications, .certificates, .projects, .contact
+      {
+        font-size: 12px;
+      }
+      .name
+      {
+        font-size: 22px;
+      }
+      .right-head .material-icons-outlined {
+        font-size: 1rem;
+      }
+  }
+
+  @media(max-width: 817px)
+  {
+    .name
+    {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+  }
+
+  @media(max-width: 800px)
+  {
+    .name
+    {
+      font-size: 15px;
+      margin-left: 5px;
+    }
+  }
+
+  @media(max-width: 767px)
+  {
+    .topnav
+    {
+      display: flex;
+      flex-direction: column;
+    }
+    .head
+    {
+      display: none;
+    }
+
+    .hide-text
+    {
+      display: none;
+    }
+  
+  }
+
+  @media(max-width: 400px)
+  {
+    .sml-head a {
+      padding: 18px 16px;
+      font-size: 20px;
+      margin-left: 10px;
+      }
+      .icon-head a i .iconify
+      {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin:4px 5px 0px 20px;
+      }
+      .icon-head a.icon
+      {
+        margin:8px 15px 0px 0px;
+      }
+      .topnav .hamburger a {
+        padding: 12px 16px;
+        font-size: 15px;
+        display: block;
+        }
+      .hamburger span
+      {
+        font-size: 20px;
+        margin:25px 5px 0px 0px;
+      }
+  }
+  @media(max-width: 307px)
+  {
+    .sml-head a {
+      padding: 18px 0px;
+      font-size: 20px;
+      margin-left: 5px;
+      }
+  }
+
+  

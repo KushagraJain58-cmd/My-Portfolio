@@ -1,18 +1,34 @@
-var darkBtn = document.querySelector(".dark_mode");
-var lightBtn = document.querySelector(".light_mode");
+var darkBtn = document.querySelectorAll(".dark_mode");
+var lightBtn = document.querySelectorAll(".light_mode");
 
-darkBtn.addEventListener("click", function () {
-    lightBtn.classList.remove('hide');
-    darkBtn.classList.add('hide');
+darkBtn[0].addEventListener("click", function () {
+    lightBtn[0].classList.remove('hide');
+    darkBtn[0].classList.add('hide');
     document.documentElement.setAttribute('data-theme', 'dark');
     // localStorage.setItem('theme', 'dark');
 });
 
-lightBtn.addEventListener("click", function () {
-    darkBtn.classList.remove('hide');
-    lightBtn.classList.add('hide');
+lightBtn[0].addEventListener("click", function () {
+    darkBtn[0].classList.remove('hide');
+    lightBtn[0].classList.add('hide');
     document.documentElement.setAttribute('data-theme', 'light');
     // localStorage.setItem('theme', 'light');
+
+});
+
+
+darkBtn[1].addEventListener("click", function () {
+  lightBtn[1].classList.remove('hide');
+  darkBtn[1].classList.add('hide');
+  document.documentElement.setAttribute('data-theme', 'dark');
+  // localStorage.setItem('theme', 'dark');
+});
+
+lightBtn[1].addEventListener("click", function () {
+  darkBtn[1].classList.remove('hide');
+  lightBtn[1].classList.add('hide');
+  document.documentElement.setAttribute('data-theme', 'light');
+  // localStorage.setItem('theme', 'light');
 
 });
 
@@ -443,23 +459,20 @@ async function handleSubmit(event) {
 
 form.addEventListener("submit", handleSubmit);
 
-// // Get the modal
-// var modal = document.getElementById("myModal");
-
-// // Get the image and insert it inside the modal - use its "alt" text as a caption
-// var img = document.getElementById("myImg");
-// var modalImg = document.getElementById("img01");
-// var captionText = document.getElementById("caption");
-// img.document.addEventListener("click",function(){
-//   modal.style.display = "block";
-//   modalImg.src = this.src;
-//   captionText.innerHTML = this.alt;
-// });
-
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
-
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() { 
-//   modal.style.display = "none";
-// }
+//////////////////// MOBILE HEADER /////////////////////////////
+function myFunction() 
+{
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block")
+    {
+      x.style.display = "none";
+      x.classList.remove("animate__slideInDown");
+      x.classList.add("animate__slideOutUp");
+    } 
+    else 
+    {
+      x.style.display = "block";
+      x.classList.remove("animate__slideOutUp");
+      x.classList.add("animate__slideInDown");
+    }
+}

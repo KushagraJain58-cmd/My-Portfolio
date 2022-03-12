@@ -119,6 +119,7 @@ body {
 	background-color: var(--backgroundClr);
 	margin: 0;
   	padding: 0;
+	  overflow-x: hidden;
 }
 button
 {
@@ -219,6 +220,85 @@ button
 
 /******************HEADER**********************/
 
+.topnav {
+	/*background-color: #333;*/
+	/*position: relative;*/
+	position: fixed;
+	display: none;
+	z-index: 99999;
+	height: 60px;
+	width: 100%;
+	font-family: "Roboto",sans-serif;
+	background-color: var(--backgroundClr);
+  }
+  
+  .topnav #myLinks {
+	display: none;
+	background-color: #000;
+	opacity: 0.8;
+	margin-right: 20px;
+	margin-top: 10px;
+  }
+  .topnav #myLinks a
+  {
+	  font-size: 20px;
+  }
+  
+  .sml-head a {
+	padding: 18px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	display: block;
+	margin-left: 20px;
+	font-family:'Poppins', sans-serif;
+  }
+  .topnav .hamburger a {
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+  }
+  
+  .hamburger
+  {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: flex-end;
+	  align-items: flex-end;
+  }
+
+  .hamburger span
+  {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0px;
+	font-size: 25px;
+	margin:25px 10px 0px 0px;
+  }
+  /* .sml-head
+  {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  } */
+  .icon-head a.icon {
+	/*background: black;*/
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 30px;
+	margin:8px 45px 0px 0px;
+  }
+  .icon-head a i .iconify
+  {
+	  height: 2rem;
+	  width: 2rem;
+	  color: var(--btns);
+  }
+
 .head
 {
 	display: flex;
@@ -234,6 +314,7 @@ button
 
 .left-head
 {
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
@@ -276,7 +357,7 @@ button
 	width: 85%;
 	justify-content: center;
 	align-items: center;
-	column-gap: 4%;
+	/* column-gap: 4%; */
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -304,6 +385,7 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 .right-head ul {
 	display: flex;
 	font-size: var(--normalSize);
+	margin-block-start: 1em;
 }
 
 .right-head li {
@@ -311,7 +393,7 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 }
 
 .right-head .material-icons-outlined {
-	font-size: var(--h4FontSize);
+	font-size: 1.5rem;
 	color: var(--primaryText);
 	cursor: pointer;
 	user-select: none;
@@ -355,7 +437,7 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 }
 .written
 {
-	height: 200px;
+	height: auto;
 	padding: 0px 30px 30px 30px;
 	margin-bottom: 3em;
 }
@@ -1052,13 +1134,6 @@ button {
 	margin-bottom: 10px;
 }
 
-.c-btn a
-{
-	color: var(--primaryWhite);
-	bottom: 0px;
-	align-self: center;
-}
-
 #myImg {
 	border-radius: 5px;
 	cursor: pointer;
@@ -1091,16 +1166,6 @@ button {
   }
   
   /* Caption of Modal Image */
-  #caption {
-	margin: auto;
-	display: block;
-	width: 80%;
-	max-width: 700px;
-	text-align: center;
-	color: #ccc;
-	padding: 10px 0;
-	height: 150px;
-  }
   
   /* Add Animation */
   .modal-content, #caption {  
