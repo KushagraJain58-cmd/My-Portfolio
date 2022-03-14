@@ -349,10 +349,12 @@
     .next
     {
       right: 1rem;
+      z-index: 100;
     }
     .prev
     {
       left: 1rem;
+      z-index: 100;
     }
   }
 
