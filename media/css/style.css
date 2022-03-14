@@ -359,7 +359,7 @@ button
 }
 .last-name
 {
-	color: var(--lnameClr);
+	color: var(--fnameClr);
 }
 .first-name:hover {
 	animation-name: text-change1;
