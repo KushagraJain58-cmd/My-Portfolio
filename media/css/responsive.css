@@ -346,7 +346,14 @@
       align-items: center;
       justify-content: center;
     }
-
+    .next
+    {
+      right: 1rem;
+    }
+    .prev
+    {
+      left: 1rem;
+    }
   }
 
   @media(max-width:470px) {
