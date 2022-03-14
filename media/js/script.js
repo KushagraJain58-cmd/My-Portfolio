@@ -436,7 +436,7 @@ for (var i = 0; i < learnMore.length; i++) {
   learnMore[i].addEventListener("click", function () {
     if (this.innerHTML == "Show Less") {
       this.nextElementSibling.style.display = "none";
-      this.innerHTML = "Learn More";
+      this.innerHTML = "Read More";
     } else {
       this.nextElementSibling.style.display = "block";
       this.innerHTML = "Show Less";
