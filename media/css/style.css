@@ -244,6 +244,15 @@ button
   {
 	  font-size: 20px;
   }
+  .topnav #myLinks ul, .topnav #myLinksCertificate ul
+  {
+	padding-inline-start: 10px;
+	padding: 10px;
+  }
+  .topnav #myLinks ul li, .topnav #myLinksCertificate ul li
+  {
+	  margin-bottom: 1rem;
+  }
   .topnav #myLinksCertificate {
 	display: none;
 	background-color: #000;
@@ -737,7 +746,7 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 {
 	display: flex;
 	column-gap: 2rem;
-	width: 100%;
+	width: 80%;
 	justify-content: center;
 }
 
@@ -745,7 +754,7 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-right: 2%;
+	/* margin-right: 2%; */
 	color: var(--secondaryText);
 	cursor: pointer;
 }
@@ -878,10 +887,11 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 
 .slideshow-projects
 {
-	width: 80%;
+	width: 100%;
 	position: relative;
 	display: flex;
 	align-items: center;
+	margin-top: 5%;
 }
 
 .prev, .next
@@ -925,6 +935,7 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 	height: 100%;
 }
 
+
 .slide video
 {
 	height: 100%;
@@ -951,7 +962,7 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 	display: flex;
 	flex-direction: column;
 	margin-right: 20px;
-	width: 50%;
+	text-align: center;
 }
 .slide-content p, .slide-content li
 {
@@ -972,6 +983,12 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 {
 	margin-block-start: 0em;
     margin-block-end: 0em;
+}
+.slide-content ul
+{
+	/* margin-block-start: 0em;
+    margin-block-end: 0em; */
+	padding-inline-start: 0px;
 }
 .slide-content div
 {
@@ -1011,6 +1028,16 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 	width: 0px;
 	height: 0px;
 }
+.learn-more {
+	cursor: pointer;
+	font-weight: lighter;
+	color: var(--btns);
+	display: none;
+  }
+  .slide-content div .button
+  {
+	  margin-right: 10px;
+  }
 
 /**************** CONTACT ME ************/
 
