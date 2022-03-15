@@ -470,6 +470,38 @@
 
   @media(max-width:430px)
   {
+    h1
+    {
+      font-size: 2rem;
+    }
+    h2
+    {
+      font-size: 1.5rem;
+    }
+    p
+    {
+      font-size: 1rem;
+    }
+    label
+    {
+      font-size: 0.7rem;
+    }
+    input,textarea
+    {
+      font-size: 0.7rem;
+    }
+    .button
+    {
+      font-size: 1rem;
+    }
+    .container
+    {
+      font-size: 1.2rem;
+    }
+    .homeIntro
+    {
+      font-size: 1rem;
+    }
     .homeBlob
     {
       height: 17rem;
@@ -509,7 +541,10 @@
       justify-content:flex-start;
     align-items:flex-start;
     }
-
+    .foot-content h2
+    {
+      font-size: 2rem;
+    }
   }
   @media(max-width: 400px)
   {
@@ -693,4 +728,19 @@
       }
   }
 
-  
+  @media(max-width:284px)
+  {
+    .foot-content h2
+    {
+      font-size: 1.5rem;
+    }
+    .foot-content span
+    {
+      font-size: 0.8rem;
+    }
+    .foot-content .iconify
+    {
+      height: 1rem;
+      width: 1rem;
+    }
+  }
