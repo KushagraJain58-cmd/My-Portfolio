@@ -494,6 +494,10 @@
     {
       font-size: 1rem;
     }
+    .section-heading span
+    {
+      font-size: 0.8rem;
+    }
     .container
     {
       font-size: 1.2rem;
@@ -711,7 +715,7 @@
       }
       .about-content
       {
-        margin-right: 50px;
+        margin-right: 20px;
       }
   }
 
@@ -730,6 +734,10 @@
 
   @media(max-width:284px)
   {
+    p
+    {
+      font-size: 0.8rem;
+    }
     .foot-content h2
     {
       font-size: 1.5rem;
@@ -742,5 +750,10 @@
     {
       height: 1rem;
       width: 1rem;
+    }
+    .about-img
+    {
+      height: 10rem;
+      width: 10rem;
     }
   }
