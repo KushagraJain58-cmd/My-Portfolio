@@ -1045,6 +1045,8 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 {
 	display: flex;
 	flex-direction: row;
+	column-gap: 3rem;
+    justify-content: center;
 }
 .contact-social
 {
@@ -1053,6 +1055,7 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 	justify-content: flex-start;
 	row-gap: 3rem;
 	margin-right: 3rem;
+	margin-top: 2rem;
 }
 .social-link
 {
@@ -1096,6 +1099,7 @@ home:hover, .about:hover, .skills:hover, .qualifications:hover, .certificates:ho
 
 .contact-grid {
 	display: flex;
+	flex-direction: row;
 }
 
 .contact-input {
@@ -1275,6 +1279,7 @@ footer
 	grid-gap: 3rem;
 	margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 .foot-content h2 {
 	color: var(--primaryWhite);
