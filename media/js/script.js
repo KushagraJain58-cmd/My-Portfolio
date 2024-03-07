@@ -41,7 +41,7 @@ const qualificationsBtn = document.querySelectorAll(".qualifications");
 const certificatesBtn = document.querySelectorAll(".certificates");
 const projectsBtn = document.querySelectorAll(".projects");
 const contactMeBtn = document.querySelectorAll(".contact");
-const headOption = document.querySelectorAll(".head_optn");
+const headOption = document.querySelectorAll(".head-optn");
 
 var currSelected = homeBtn[1];
 
